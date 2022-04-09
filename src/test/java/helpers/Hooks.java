@@ -25,11 +25,11 @@ public class Hooks extends BaseDriver {
         testSessionData.setDriver(driver);
         testSessionData.setPomContainer(new PomContainer(driver));
         pages = testSessionData.getPomContainer();
+        driver.manage().deleteAllCookies();
     }
 
     @AfterMethod
     public void tearDown() {
-        testSessionData.getDriver().manage().deleteAllCookies();
         testSessionData.getDriver().quit();
     }
 }

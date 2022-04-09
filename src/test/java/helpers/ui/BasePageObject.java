@@ -23,9 +23,14 @@ public class BasePageObject {
      * @param element
      * @return WebElement after wait
      */
-    public WebElement waitToBeClickable(WebElement element) {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        return wait.until(ExpectedConditions.elementToBeClickable(element));
+    public boolean waitToBeClickable(WebElement element) {
+        try {
+            wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            return wait.until(ExpectedConditions.elementToBeClickable(element)).isDisplayed();
+        } catch (TimeoutException | NoSuchElementException e) {
+            System.out.println("Element not found.");
+            return false;
+        }
     }
 
     /**
@@ -56,7 +61,7 @@ public class BasePageObject {
      * @param by By identifier of WebElement
      * @return WebElement
      */
-    public WebElement retryFindElement(By by) {
+    /*public WebElement retryFindElement(By by) {
         WebElement el = null;
         int attempts = 0;
         while (attempts < 3) {
@@ -71,9 +76,9 @@ public class BasePageObject {
             attempts++;
         }
         return el;
-    }
+    }*/
 
-    public WebElement retryFindElementByDataHeaderFeature(String dataHeaderFeature) {
+    /*public WebElement retryFindElementByDataHeaderFeature(String dataHeaderFeature) {
         By by = By.cssSelector("[data-header-feature='" + dataHeaderFeature + "']");
 
         return retryFindElement(by);
@@ -83,7 +88,7 @@ public class BasePageObject {
         By by = By.cssSelector("[data-content-feature='" + dataContentFeature + "']");
 
         return retryFindElement(by);
-    }
+    }*/
 
     /**
      * Find WebElement inside WebElement Method will try to find clickable element 3 times
@@ -91,7 +96,7 @@ public class BasePageObject {
      * @param by By identifier of WebElement
      * @return WebElement
      */
-    public WebElement retryFindElement(WebElement element, By by) {
+    /*public WebElement retryFindElement(WebElement element, By by) {
         WebElement el = null;
         int attempts = 0;
         while (attempts < 3) {
@@ -106,13 +111,13 @@ public class BasePageObject {
             attempts++;
         }
         return el;
-    }
+    }*/
 
-    public WebElement retryFindElementByDataTestId(WebElement element, String dataTestId) {
+    /*public WebElement retryFindElementByDataTestId(WebElement element, String dataTestId) {
         By by = By.cssSelector("[data-testid='" + dataTestId + "']");
 
         return retryFindElement(element, by);
-    }
+    }*/
 
     public List<WebElement> retryFindElements(By by) {
         List<WebElement> el = null;
