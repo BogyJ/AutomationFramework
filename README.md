@@ -5,17 +5,16 @@
 
 ## Prerequisites
  - Gradle build tool 7.4.2
- - Java 17 (set `JAVA_HOME` environment variable to point to jdk root folder e.g. `C:\Program Files\Java\jdk-17.0.2`)
+ - Java 17 (if you are using Windows set `JAVA_HOME` environment variable to point to jdk root folder e.g. `C:\Program Files\Java\jdk-17.0.2`)
  - ![Environment Variables](https://github.com/BogyJ/AutomationFramework/blob/master/environment_variables.png "Environment Variables")
 
 ## Dependencies
 - Dependencies are managed by Gradle and they are declared in `build.gradle` in root project folder
-- seleniumVersion = '4.1.3'
-- webDriverManager = '5.1.0'
-- testNG = '7.5'
-- apachePoi = '5.2.2'
-- apachePoiOoxml = '5.2.2'
-- log4j = '2.17.2'
+- **Selenium** = '4.1.3' - For browser automation
+- **WebDriverManager** = '5.1.0' - Download, setup, and maintenance of the drivers required by Selenium WebDriver
+- **TestNG** = '7.5' - Testing framework on which the tests are being executed
+- **Apache POI** = '5.2.2' - Library for parsing and working with Excel files in Java
+- **log4j** = '2.17.2' - Logging library
 
 ## Project Structure
 - `src/test/java/containers` used for storing test session data and instantiated page object models
