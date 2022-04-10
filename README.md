@@ -6,7 +6,7 @@
 ## Prerequisites
  - Gradle build tool 7.4.2
  - Java 17 (set `JAVA_HOME` environment variable to point to jdk root folder e.g. `C:\Program Files\Java\jdk-17.0.2`)
- - ![Environment Variables](https://github.com/BogyJ/AutomationFramework/environment_variables.png "Environment Variables")
+ - ![Environment Variables](https://github.com/BogyJ/AutomationFramework/blob/master/environment_variables.png "Environment Variables")
 
 ## Dependencies
 - Dependencies are managed by Gradle and they are declared in `build.gradle` in root project folder
