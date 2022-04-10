@@ -43,7 +43,6 @@ public class SharedMethods {
     }
 
     public static void logCommonResults() {
-        log.info("============================== Common results ==============================");
         List<Map<String, String>> commonResults = new ArrayList<>();
         List<String> allUrls = new ArrayList<>();
 
@@ -61,6 +60,7 @@ public class SharedMethods {
             }
         }
 
+        if(commonResults.size() > 0) log.info("============================== Common results ==============================");
         for (Map<String, String> result : commonResults) {
             log.info("Website URL: {}", result.get("url"));
         }

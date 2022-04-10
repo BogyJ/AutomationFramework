@@ -26,9 +26,10 @@ public class BasePageObject {
     }
 
     /**
-     * Wait for element to be clickable
+     * Wait for an element to be clickable
      *
      * @param element
+     * @param waitTime
      * @return WebElement after wait
      */
     public boolean waitToBeClickable(WebElement element, Long waitTime) {
