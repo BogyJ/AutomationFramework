@@ -1,8 +1,10 @@
 package poms;
 
+import containers.TestSessionData;
 import helpers.ui.BasePageObject;
-import helpers.ui.annotations.FindByDataHeaderFeature;
 import org.apache.commons.collections4.map.HashedMap;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -15,56 +17,53 @@ public class GoogleHomePage extends BasePageObject {
     @FindBy(css = "input[name=\"q\"]")
     WebElement searchInput;
 
-    // first link can be representation of fragment link so sometimes depending on keyword it won't match in allRootLinks
+    // first link can be representation of fragment link so sometimes depending on
+    // keyword it won't match in websiteTitles
     @FindBy(css = ".xpdopen .g > div > div > div > a")
-    WebElement firstRootLink;
-
-    /*@FindByDataHeaderFeature("0")
-    List<WebElement> allRootLinks;*/
+    WebElement firstWebsiteTitle;
 
     @FindBy(css = "div[data-header-feature=\"0\"] > div > a")
-    List<WebElement> allRootLinks;
+    List<WebElement> websiteTitles;
 
     @FindBy(css = "div[data-content-feature=\"1\"] > div")
     List<WebElement> shortDescriptions;
 
+    private final Logger log = LogManager.getLogger(GoogleHomePage.class);
+
     public GoogleHomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
-        waitForLoad(1L);
-    }
-
-    public void goToGoogleHomePage(String url) {
-        driver.get(url);
-        driver.manage().window().maximize();
     }
 
     public void searchByKeyword(String keyword) {
-        waitToBeClickable(searchInput);
+        log.info("Search by keyword: {}", keyword);
+        waitToBeClickable(searchInput, 5L);
         searchInput.sendKeys(keyword);
         searchInput.sendKeys(Keys.ENTER);
     }
 
-    public List<List<Map<String, String>>> getSearchResults() {
-        if (allRootLinks.size() == 0) {
+    public List<Map<String, String>> getSearchResults() {
+        if (websiteTitles.size() == 0) {
+            log.info("No search results found");
             return null;
         }
 
         List<WebElement> groupedLinks = new ArrayList<>();
 
         boolean isDisplayedFirstLinkFragment = false;
-        if (waitToBeClickable(firstRootLink)) {
+        if (waitToBeClickable(firstWebsiteTitle, 5L)) {
             isDisplayedFirstLinkFragment = true;
-            groupedLinks.add(firstRootLink);
+            groupedLinks.add(firstWebsiteTitle);
         }
-        groupedLinks.addAll(allRootLinks);
+        groupedLinks.addAll(websiteTitles);
+
+        log.info("Found {} results", groupedLinks.size());
 
         if (groupedLinks.size() > 10) groupedLinks.subList(10, groupedLinks.size()).clear();
 
-        List<List<Map<String, String>>> resultsInfo = new ArrayList<>();
+        List<Map<String, String>> resultsInfo = new ArrayList<>();
 
         for (int i = 0; i < groupedLinks.size(); i++) {
-            List<Map<String, String>> results = new ArrayList<>();
             Map<String, String> resultDetails = new HashedMap<>();
 
             resultDetails.put("websiteTitle", groupedLinks.get(i).findElement(By.cssSelector("h3")).getText());
@@ -78,9 +77,10 @@ public class GoogleHomePage extends BasePageObject {
                 resultDetails.put("shortDescription", shortDescriptions.get(i).getText());
             }
 
-            results.add(resultDetails);
-            resultsInfo.add(results);
+            resultsInfo.add(resultDetails);
         }
+        TestSessionData.searchResults.add(resultsInfo);
+        SharedMethods.logResults(resultsInfo);
         return resultsInfo;
     }
 }

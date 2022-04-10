@@ -1,5 +1,7 @@
 package helpers.ui;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.html5.LocalStorage;
 import org.openqa.selenium.html5.WebStorage;
@@ -12,10 +14,16 @@ import java.util.Base64;
 import java.util.List;
 
 public class BasePageObject {
-    private static final String screenshotPath = "build/allure-results/";
     public WebDriverWait wait;
     public WebDriver driver;
     private JavascriptExecutor js;
+    private final Logger log = LogManager.getLogger(BasePageObject.class);
+
+    public void openWebPage(String url) {
+        log.info("Navigate to: {}", url);
+        driver.get(url);
+        driver.manage().window().maximize();
+    }
 
     /**
      * Wait for element to be clickable
@@ -23,9 +31,10 @@ public class BasePageObject {
      * @param element
      * @return WebElement after wait
      */
-    public boolean waitToBeClickable(WebElement element) {
+    public boolean waitToBeClickable(WebElement element, Long waitTime) {
         try {
-            wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            log.info("Wait up to {} second(s) for an element to be clickable", waitTime);
+            wait = new WebDriverWait(driver, Duration.ofSeconds(waitTime));
             return wait.until(ExpectedConditions.elementToBeClickable(element)).isDisplayed();
         } catch (TimeoutException | NoSuchElementException e) {
             System.out.println("Element not found.");
@@ -39,6 +48,7 @@ public class BasePageObject {
      * @param waitTime
      */
     public void waitForLoad(long waitTime) {
+        log.info("Wait {} second(s) to load the page", waitTime);
         ExpectedCondition<Boolean> expectation = new
                 ExpectedCondition<Boolean>() {
                     public Boolean apply(WebDriver driver) {
@@ -61,24 +71,24 @@ public class BasePageObject {
      * @param by By identifier of WebElement
      * @return WebElement
      */
-    /*public WebElement retryFindElement(By by) {
+    public WebElement retryFindElement(By by) {
         WebElement el = null;
         int attempts = 0;
-        while (attempts < 3) {
+        while (attempts < 5) {
             try {
-                el = waitToBeClickable(driver.findElement(by));
+                el = driver.findElement(by);
                 if (el != null) {
                     break;
                 }
             } catch (StaleElementReferenceException e) {
-                el = waitToBeClickable(driver.findElement(by));
+                el = driver.findElement(by);
             }
             attempts++;
         }
         return el;
-    }*/
+    }
 
-    /*public WebElement retryFindElementByDataHeaderFeature(String dataHeaderFeature) {
+    public WebElement retryFindElementByDataHeaderFeature(String dataHeaderFeature) {
         By by = By.cssSelector("[data-header-feature='" + dataHeaderFeature + "']");
 
         return retryFindElement(by);
@@ -88,7 +98,13 @@ public class BasePageObject {
         By by = By.cssSelector("[data-content-feature='" + dataContentFeature + "']");
 
         return retryFindElement(by);
-    }*/
+    }
+
+    public WebElement retryFindElementByDataTestId(String dataTestId) {
+        By by = By.cssSelector("[data-testid='" + dataTestId + "']");
+
+        return retryFindElement(by);
+    }
 
     /**
      * Find WebElement inside WebElement Method will try to find clickable element 3 times
@@ -96,28 +112,28 @@ public class BasePageObject {
      * @param by By identifier of WebElement
      * @return WebElement
      */
-    /*public WebElement retryFindElement(WebElement element, By by) {
+    public WebElement retryFindElement(WebElement element, By by) {
         WebElement el = null;
         int attempts = 0;
         while (attempts < 3) {
             try {
-                el = waitToBeClickable(element.findElement(by));
+                el = element.findElement(by);
                 if (el != null) {
                     break;
                 }
             } catch (StaleElementReferenceException e) {
-                el = waitToBeClickable(element.findElement(by));
+                el = element.findElement(by);
             }
             attempts++;
         }
         return el;
-    }*/
+    }
 
-    /*public WebElement retryFindElementByDataTestId(WebElement element, String dataTestId) {
+    public WebElement retryFindElementByDataTestId(WebElement element, String dataTestId) {
         By by = By.cssSelector("[data-testid='" + dataTestId + "']");
 
         return retryFindElement(element, by);
-    }*/
+    }
 
     public List<WebElement> retryFindElements(By by) {
         List<WebElement> el = null;

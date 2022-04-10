@@ -31,7 +31,7 @@ public class AnnotationProcessor {
             Field driverField = pomClass.getField("driver");
             RemoteWebDriver driver = (RemoteWebDriver) driverField.get(pomEntity);
             for (Field field : pomClass.getDeclaredFields()) {
-                FindByDataHeaderFeature annotation = field.getAnnotation(FindByDataHeaderFeature.class);
+                FindByDataTestId annotation = field.getAnnotation(FindByDataTestId.class);
                 if (annotation != null) {
                     field.setAccessible(true);
 

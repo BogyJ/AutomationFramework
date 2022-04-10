@@ -15,9 +15,9 @@ public class MyElementLocator implements ElementLocator {
     public MyElementLocator(SearchContext searchContext, Field field) {
         this.searchContext = searchContext;
 
-        FindByDataHeaderFeature annotation = field.getAnnotation(FindByDataHeaderFeature.class);
+        FindByDataTestId annotation = field.getAnnotation(FindByDataTestId.class);
         String dataTestId = annotation.value();
-        String css = String.format("[data-header-feature='%s'] > div > a", dataTestId);
+        String css = String.format("[data-testid='%s']", dataTestId);
 
         this.by = By.cssSelector(css);
     }

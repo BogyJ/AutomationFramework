@@ -4,15 +4,17 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class TestSessionData {
     private WebDriver driver;
     private PomContainer pomContainer;
-    private String searchEngineUrl;
-    public static ArrayList<HashMap<String, String>> testParameters = new ArrayList<>();
+    public static String searchKeyword;
+    public static List<HashMap<String, String>> testParameters = new ArrayList<>();
+    public static List<List<Map<String, String>>> searchResults = new ArrayList<>();
 
-    public TestSessionData() {
-    }
+    public TestSessionData() { }
 
     public WebDriver getDriver() {
         return driver;
@@ -30,11 +32,4 @@ public class TestSessionData {
         this.pomContainer = pomContainer;
     }
 
-    public String getSearchEngineUrl() {
-        return searchEngineUrl;
-    }
-
-    public void setSearchEngineUrl(String searchEngineUrl) {
-        this.searchEngineUrl = searchEngineUrl;
-    }
 }
