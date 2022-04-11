@@ -42,7 +42,7 @@ public class SharedMethods {
 
     public static void logCommonResults() {
         List<Map<String, String>> commonResultsOfSameKeyword = new ArrayList<>();
-        Set<String> uniqueUrls = new HashSet<>();
+        Set<String> uniqueWebsiteTitles = new HashSet<>();
         List<Map<String, String>> duplicateResults = new ArrayList<>();
 
         Set<String> keywords = new HashSet<>();
@@ -65,7 +65,7 @@ public class SharedMethods {
         }
 
         for (Map<String, String> value : commonResultsOfSameKeyword) {
-            if (!uniqueUrls.add(value.get("url"))) {
+            if (!uniqueWebsiteTitles.add(value.get("websiteTitle"))) {
                 duplicateResults.add(value);
             }
         }
