@@ -10,8 +10,9 @@ import java.util.Map;
 public class TestSessionData {
     private WebDriver driver;
     private PomContainer pomContainer;
-    public static String searchKeyword;
     public static List<HashMap<String, String>> testParameters = new ArrayList<>();
+    public static String searchKeyword;
+    public static Map<String, List<String>> searchKeywordsBySearchEngine = new HashMap<>();
     public static List<List<Map<String, String>>> searchResults = new ArrayList<>();
 
     public TestSessionData() { }

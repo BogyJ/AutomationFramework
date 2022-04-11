@@ -15,7 +15,6 @@ public class SharedMethods {
 
         List<Map<String, String>> resultsContainingKeyword = new ArrayList<>();
         List<Map<String, String>> resultsNotContainingKeyword = new ArrayList<>();
-        // for (List<Map<String, String>> searchEngineResults : TestSessionData.searchResults) {
         for (Map<String, String> result : results) {
             if (keywords.stream().anyMatch(result.get("websiteTitle").toLowerCase(Locale.ROOT)::contains) ||
                     keywords.stream().anyMatch(result.get("url").toLowerCase(Locale.ROOT)::contains) ||
@@ -25,7 +24,6 @@ public class SharedMethods {
                 resultsNotContainingKeyword.add(result);
             }
         }
-        // }
 
         log.info("----------------------- Results containing: {} -----------------------", TestSessionData.searchKeyword);
         resultsContainingKeyword.forEach(el -> {
@@ -43,26 +41,38 @@ public class SharedMethods {
     }
 
     public static void logCommonResults() {
-        List<Map<String, String>> commonResults = new ArrayList<>();
-        List<String> allUrls = new ArrayList<>();
+        List<String> commonUrlsOfSameKeyword = new ArrayList<>();
+        Set<String> uniqueUrls = new HashSet<>();
+        List<String> duplicateResults = new ArrayList<>();
 
-        for (int j = 0; j < TestSessionData.searchResults.size() - 1; j++) {
-            for (int i = 0; i < TestSessionData.searchResults.get(j).size() - 1; i++) {
-                allUrls.add(TestSessionData.searchResults.get(j).get(i).get("url"));
-            }
-        }
+        Set<String> keywords = new HashSet<>();
+        List<String> duplicateKeywords = new ArrayList<>();
 
-        for (int j = 0; j < TestSessionData.searchResults.size() - 1; j++) {
-            for (int i = 0; i < TestSessionData.searchResults.get(j).size() - 1; i++) {
-                if (allUrls.get(i).contains(TestSessionData.searchResults.get(j).get(i).get("url"))) {
-                    commonResults.add(TestSessionData.searchResults.get(j).get(i));
+        for (Map.Entry<String, List<String>> entry : TestSessionData.searchKeywordsBySearchEngine.entrySet()) {
+            for (String keyword : entry.getValue()) {
+                if (!keywords.add(keyword)) {
+                    duplicateKeywords.add(keyword);
                 }
             }
         }
 
-        if(commonResults.size() > 0) log.info("============================== Common results ==============================");
-        for (Map<String, String> result : commonResults) {
-            log.info("Website URL: {}", result.get("url"));
+        for (int j = 0; j < TestSessionData.searchResults.size(); j++) {
+            for (int i = 0; i < TestSessionData.searchResults.get(j).size(); i++) {
+                if (duplicateKeywords.contains(TestSessionData.searchResults.get(j).get(i).get("keyword"))) {
+                    commonUrlsOfSameKeyword.add(TestSessionData.searchResults.get(j).get(i).get("url"));
+                }
+            }
+        }
+
+        for (String url : commonUrlsOfSameKeyword) {
+            if (!uniqueUrls.add(url)) {
+                duplicateResults.add(url);
+            }
+        }
+
+        if(duplicateResults.size() > 0) log.info("============================== Common results ==============================");
+        for (String sameResult : duplicateResults) {
+            log.info("Website URL: {}", sameResult);
         }
 
     }

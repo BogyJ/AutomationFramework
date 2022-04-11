@@ -24,7 +24,7 @@
 - `src/test/java/runners` TestNG runners
 
 ## How to Run Tests 
-- Before running tests make sure you have entered correct test parameters in `src/test/resources/testParameters.xlsx` Excel file
+- Before running tests make sure you have entered correct test parameters in `src/test/resources/testParameters.xlsx` Excel file (supported browser are either `chrome` or `firefox`)
 - After providing test parameters then you can enter keywords for each search engine in `src/test/resources/testData.xlsx` Excel file (note that Excel sheet name represents search engine)
 - If you have locally set up gradle binary then you can `cd` into project root and run the tests by command `gradle clean test`
 - If you do not have installed gradle binary locally then you can `cd` into project root folder and use `gradlew` (gradle wrapper) instead `./gradlew clean test`
@@ -32,7 +32,8 @@
 ## Logs
 - Logs can be found in `/logs/SearchEngine.log` file
 - It will be generated after test execution
-- **Note** that if you execute tests in a row few time it will append results to a log file
+- Common results will be logged only if the same keyword is used for both search engines
+- **Note** that if you execute tests in a row few times it will append results to a log file
 
 ## Workflow
 - Framework was developed in a way that allows new contributors to a project to easily add tests without any overlapping or potential conflicts

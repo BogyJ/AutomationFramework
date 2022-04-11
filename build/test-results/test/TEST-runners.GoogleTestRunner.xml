@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.GoogleTestRunner" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-04-10T22:02:32" hostname="DESKTOP-MAIN" time="14.381">
+  <properties/>
+  <testcase name="searchGoogleByKeyword[0](automation testing)" classname="runners.GoogleTestRunner" time="2.565"/>
+  <testcase name="searchGoogleByKeyword[1](quality assurance)" classname="runners.GoogleTestRunner" time="2.422"/>
+  <testcase name="searchGoogleByKeyword[2](ruby is the best programming language)" classname="runners.GoogleTestRunner" time="2.357"/>
+  <system-out><![CDATA[00:02:29.328 [Test worker] INFO  helpers.file.ExcelHelper - Acquiring test data from src/test/resources/testData.xlsx with sheet name Google
+00:02:32.120 [Test worker] INFO  helpers.ui.BasePageObject - Navigate to: https://google.com
+00:02:33.416 [Test worker] INFO  poms.GoogleHomePage - Search by keyword: automation testing
+00:02:33.416 [Test worker] INFO  helpers.ui.BasePageObject - Wait up to 5 second(s) for an element to be clickable
+00:02:34.137 [Test worker] INFO  helpers.ui.BasePageObject - Wait up to 5 second(s) for an element to be clickable
+00:02:34.198 [Test worker] INFO  poms.GoogleHomePage - Found 9 results
+00:02:34.681 [Test worker] INFO  poms.SharedMethods - ----------------------- Results containing: automation testing -----------------------
+00:02:34.682 [Test worker] INFO  poms.SharedMethods - Website Title: What is automation testing?
+00:02:34.682 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.globalapptesting.com 
+00:02:34.682 [Test worker] INFO  poms.SharedMethods - Short Description: No description available.
+00:02:34.682 [Test worker] INFO  poms.SharedMethods - Website Title: Automation Testing Tutorial - Guru99
+00:02:34.682 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.guru99.com 
+00:02:34.682 [Test worker] INFO  poms.SharedMethods - Short Description: Automation Testing is a software testing technique that performs using special automated testing software tools to execute a test case suite ...
+00:02:34.682 [Test worker] INFO  poms.SharedMethods - Website Title: What is Automation Testing (Ultimate Guide to Start Test ...
+00:02:34.682 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.softwaretestinghelp.com 
+00:02:34.682 [Test worker] INFO  poms.SharedMethods - Short Description: ??? 8 ???? — Automation testing is a Software testing technique to test and compare the actual outcome with the expected outcome. This can be achieved by ...
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Website Title: Test automation - Wikipedia
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Website Url: https://en.wikipedia.org 
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Short Description: In software testing, test automation is the use of software separate from the software being tested to control the execution of tests and the comparison of ...
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Website Title: What is Test Automation? Automated Testing 101 | SmartBear
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Website Url: https://smartbear.com 
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Short Description: Automated testing is done through an automation tool, so more time can be spent on higher value tasks, such as exploratory tests while automating time-consuming ...
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Website Title: Automation Testing for Beginners - The Ultimate Guide
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Website Url: https://blog.testproject.io 
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Short Description: 26. 3. 2020. — An automation developer is actually a software developer. Thus, the basic thing you should learn first is some kind of a programming language ...
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Website Title: Automated software testing for continuous delivery - Atlassian
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.atlassian.com 
+00:02:34.683 [Test worker] INFO  poms.SharedMethods - Short Description: Automated testing is the application of software tools to automate a human-driven manual process of reviewing and validating a software product. Most modern ...
+00:02:34.684 [Test worker] INFO  poms.SharedMethods - Website Title: Automation Testing Types | Complete Guide for 2022 - Katalon
+00:02:34.684 [Test worker] INFO  poms.SharedMethods - Website Url: https://katalon.com 
+00:02:34.684 [Test worker] INFO  poms.SharedMethods - Short Description: Once the types of automated testing used in a project have been determined, an automation test framework is then chosen to help testers organize and standardize ...
+00:02:34.684 [Test worker] INFO  poms.SharedMethods - Website Title: Automation Testing Tutorial: Getting Started | BrowserStack
+00:02:34.684 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.browserstack.com 
+00:02:34.684 [Test worker] INFO  poms.SharedMethods - Short Description: 14. 10. 2021. — As the name suggests. automation testing takes software testing activities and executes them via an automation toolset or framework.
+00:02:34.685 [Test worker] INFO  poms.SharedMethods - ----------------------- Results not containing: automation testing -----------------------
+00:02:38.236 [Test worker] INFO  helpers.ui.BasePageObject - Navigate to: https://google.com
+00:02:39.486 [Test worker] INFO  poms.GoogleHomePage - Search by keyword: quality assurance
+00:02:39.486 [Test worker] INFO  helpers.ui.BasePageObject - Wait up to 5 second(s) for an element to be clickable
+00:02:40.152 [Test worker] INFO  helpers.ui.BasePageObject - Wait up to 5 second(s) for an element to be clickable
+00:02:40.230 [Test worker] INFO  poms.GoogleHomePage - Found 9 results
+00:02:40.656 [Test worker] INFO  poms.SharedMethods - ----------------------- Results containing: quality assurance -----------------------
+00:02:40.656 [Test worker] INFO  poms.SharedMethods - Website Title: What is Quality Assurance? - Definition from WhatIs.com
+00:02:40.656 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.techtarget.com 
+00:02:40.656 [Test worker] INFO  poms.SharedMethods - Short Description: No description available.
+00:02:40.656 [Test worker] INFO  poms.SharedMethods - Website Title: Quality assurance - Wikipedia
+00:02:40.656 [Test worker] INFO  poms.SharedMethods - Website Url: https://en.wikipedia.org 
+00:02:40.656 [Test worker] INFO  poms.SharedMethods - Short Description: Quality assurance (QA) is a way of preventing mistakes and defects in manufactured products and avoiding problems when delivering products or services to ...
+00:02:40.656 [Test worker] INFO  poms.SharedMethods - Website Title: Quality Assurance vs Quality Control: Definitions & Differences
+00:02:40.656 [Test worker] INFO  poms.SharedMethods - Website Url: https://asq.org 
+00:02:40.656 [Test worker] INFO  poms.SharedMethods - Short Description: Quality assurance can be defined as "part of quality management focused on providing confidence that quality requirements will be fulfilled." The confidence ...
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Website Title: What is Quality Assurance(QA)? Process, Methods, Examples
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.guru99.com 
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Short Description: 19. 2. 2022. — Quality Assurance is to check whether the product developed is fit for use. For that, Organization should have processes and standards to be ...
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Website Title: The Difference Between Quality Assurance and Quality Control
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.dialog.com.au 
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Short Description: The purpose of QA is to prevent defects from entering into the solution in the first place. In other words, QA is a pro-active management practice that is used ...
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Website Title: Quality Assurance: What Is It? - The Balance Small Business
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.thebalancesmb.com 
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Short Description: 2. 7. 2020. — Quality assurance (QA) is the act or process of confirming that a firm's quality requirements are being met. Managing the quality of ...
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Website Title: Quality Assurance (QA), Quality Control and Testing | AltexSoft
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.altexsoft.com 
+00:02:40.657 [Test worker] INFO  poms.SharedMethods - Short Description: As defined by Investopedia, it is a “process through which a business seeks to ensure that product quality is maintained or improved and manufacturing errors ...
+00:02:40.658 [Test worker] INFO  poms.SharedMethods - Website Title: Quality Assurance oglasi za posao i konkursi | HelloWorld.rs
+00:02:40.658 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.helloworld.rs 
+00:02:40.658 [Test worker] INFO  poms.SharedMethods - Short Description: Quality Assurance poslovi, konkursi i slobodna radna mesta. Veliki izbor poslova, odaberite najbolji i pošaljite CV direktno sa našeg sajta!
+00:02:40.658 [Test worker] INFO  poms.SharedMethods - Website Title: What Is Quality Assurance? | Definition and Overview
+00:02:40.658 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.productplan.com 
+00:02:40.658 [Test worker] INFO  poms.SharedMethods - Short Description: Quality assurance is a broad process for preventing quality failures. The QA team is involved in all stages of a product's development: production, testing, ...
+00:02:40.658 [Test worker] INFO  poms.SharedMethods - ----------------------- Results not containing: quality assurance -----------------------
+00:02:44.144 [Test worker] INFO  helpers.ui.BasePageObject - Navigate to: https://google.com
+00:02:45.355 [Test worker] INFO  poms.GoogleHomePage - Search by keyword: ruby is the best programming language
+00:02:45.356 [Test worker] INFO  helpers.ui.BasePageObject - Wait up to 5 second(s) for an element to be clickable
+00:02:46.045 [Test worker] INFO  helpers.ui.BasePageObject - Wait up to 5 second(s) for an element to be clickable
+00:02:46.095 [Test worker] INFO  poms.GoogleHomePage - Found 9 results
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - ----------------------- Results containing: ruby is the best programming language -----------------------
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - Website Title: Which Coding Language to Learn? | JavaScript vs Ruby
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.learnacademy.org 
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - Short Description: No description available.
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - Website Title: Is Ruby a Good Language? Why Is It so Unappreciated? - The ...
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - Website Url: https://thecodest.co 
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - Short Description: 1. 4. 2019. — Ruby is undoubtedly one of the most underrated programming languages. Although it is not as popular as JavaScript, C# or Python, it still ...
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - Website Title: What is the Ruby programming language? | A Cloud Guru
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - Website Url: https://acloudguru.com 
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - Short Description: The 2020 Stack Overflow Developer Survey names Ruby the 14th most popular programming language in the world with 7.1% of respondents being Ruby ...
+00:02:46.499 [Test worker] INFO  poms.SharedMethods - Website Title: Is Ruby a good language to start with? - Reddit
+00:02:46.500 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.reddit.com 
+00:02:46.500 [Test worker] INFO  poms.SharedMethods - Short Description: 14. 8. 2015. — Ruby is absolutely a good language to learn. Among the languages I've seen, reading ruby is the closest to reading english, so it's very easy to make sense ...
+00:02:46.500 [Test worker] INFO  poms.SharedMethods - Website Title: Ruby Programming Language
+00:02:46.500 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.ruby-lang.org 
+00:02:46.500 [Test worker] INFO  poms.SharedMethods - Short Description: Ruby is... ... A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy ...
+00:02:46.500 [Test worker] INFO  poms.SharedMethods - Website Title: Why Ruby is a great language to start with if you want to learn ...
+00:02:46.500 [Test worker] INFO  poms.SharedMethods - Website Url: https://medium.datadriveninvestor.com 
+00:02:46.500 [Test worker] INFO  poms.SharedMethods - Short Description: One of important characteristics of Ruby is that it adheres to the write less code principle. This is not to say that every program written in Ruby is at least ...
+00:02:46.501 [Test worker] INFO  poms.SharedMethods - Website Title: Ruby vs Python: Choosing Your First Programming Language
+00:02:46.501 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.coursereport.com 
+00:02:46.501 [Test worker] INFO  poms.SharedMethods - Short Description: 2. 3. 2018. — Two of the most popular programming languages, especially first languages, are Ruby and Python. Ruby is used widely for websites such as Airbnb, ...
+00:02:46.501 [Test worker] INFO  poms.SharedMethods - Website Title: The #1 Reason Ruby Should Be Your First Programming ...
+00:02:46.501 [Test worker] INFO  poms.SharedMethods - Website Url: https://mixandgo.com 
+00:02:46.501 [Test worker] INFO  poms.SharedMethods - Short Description: 22. 11. 2020. — Ruby helps you learn the concepts by getting out of your way. It's the most transparent language for beginners and experienced programmers alike ...
+00:02:46.501 [Test worker] INFO  poms.SharedMethods - Website Title: Programming in Ruby: A critical look at the pros and cons
+00:02:46.501 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.techtarget.com 
+00:02:46.501 [Test worker] INFO  poms.SharedMethods - Short Description: 11. 11. 2021. — The pros of programming in Ruby · Ruby uses a VM to execute code, which stays true to its identity as an interpreted language. · Developers can ...
+00:02:46.501 [Test worker] INFO  poms.SharedMethods - ----------------------- Results not containing: ruby is the best programming language -----------------------
+]]></system-out>
+  <system-err><![CDATA[1649628149404	geckodriver	INFO	Listening on 127.0.0.1:57454
+1649628149425	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-extensions" "--ignore-certificate-errors" "--disable-infobars" "--disable-gpu" "--remote-debugging-port" "64494" "-no-remote" "-profile" "C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofileIxpH5X"
+1649628149696	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofileIxpH5X\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64494/devtools/browser/851fdc5e-9467-4293-8cd7-35fec033b536
+1649628151588	Marionette	INFO	Listening on port 57796
+Apr 11, 2022 12:02:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.google.com"
+1649628154688	Marionette	INFO	Stopped listening on port 57796
+1649628155544	geckodriver	INFO	Listening on 127.0.0.1:63345
+1649628155565	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-extensions" "--ignore-certificate-errors" "--disable-infobars" "--disable-gpu" "--remote-debugging-port" "51766" "-no-remote" "-profile" "C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofiledzJw2Y"
+1649628155856	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofiledzJw2Y\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51766/devtools/browser/eb019aba-e328-4c7e-9e7f-81f3a981e208
+1649628157761	Marionette	INFO	Listening on port 57904
+Apr 11, 2022 12:02:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.google.com"
+1649628160661	Marionette	INFO	Stopped listening on port 57904
+1649628161431	geckodriver	INFO	Listening on 127.0.0.1:64768
+1649628161453	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-extensions" "--ignore-certificate-errors" "--disable-infobars" "--disable-gpu" "--remote-debugging-port" "54501" "-no-remote" "-profile" "C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofileJ5ImmA"
+1649628161727	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofileJ5ImmA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54501/devtools/browser/22673192-7861-4672-86e6-adb571485c75
+1649628163647	Marionette	INFO	Listening on port 57984
+Apr 11, 2022 12:02:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.google.com"
+1649628166504	Marionette	INFO	Stopped listening on port 57984
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+]]></system-err>
+</testsuite>

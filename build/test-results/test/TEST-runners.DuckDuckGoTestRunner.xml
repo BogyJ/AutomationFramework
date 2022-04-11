@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.DuckDuckGoTestRunner" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-04-10T22:02:13" hostname="DESKTOP-MAIN" time="15.076">
+  <properties/>
+  <testcase name="searchDuckDuckGoByKeyword[0](ethical hacking)" classname="runners.DuckDuckGoTestRunner" time="2.663"/>
+  <testcase name="searchDuckDuckGoByKeyword[1](privacy)" classname="runners.DuckDuckGoTestRunner" time="2.928"/>
+  <testcase name="searchDuckDuckGoByKeyword[2](hire me please)" classname="runners.DuckDuckGoTestRunner" time="2.405"/>
+  <system-out><![CDATA[00:02:09.733 [Test worker] INFO  helpers.file.ExcelHelper - Acquiring test data from src/test/resources/testData.xlsx with sheet name DuckDuckGo
+00:02:13.436 [Test worker] INFO  helpers.ui.BasePageObject - Navigate to: https://duckduckgo.com
+00:02:14.313 [Test worker] INFO  poms.DuckDuckGoHomePage - Search by keyword: ethical hacking
+00:02:14.314 [Test worker] INFO  helpers.ui.BasePageObject - Wait up to 5 second(s) for an element to be clickable
+00:02:15.577 [Test worker] INFO  poms.DuckDuckGoHomePage - Found 12 results
+00:02:16.092 [Test worker] INFO  poms.SharedMethods - ----------------------- Results containing: ethical hacking -----------------------
+00:02:16.092 [Test worker] INFO  poms.SharedMethods - Website Title: How To Become A Penetration Tester
+00:02:16.093 [Test worker] INFO  poms.SharedMethods - Website Url: infosecinstitute.com
+00:02:16.093 [Test worker] INFO  poms.SharedMethods - Short Description: Hacking Training Boot Camp 100% Pass Rate. Exam Pass Guarantee! Train With Us.. Boot Camp Trainings. 5 Day Class & 100% Pass Rate. In Person Or Online classes Available.
+00:02:16.093 [Test worker] INFO  poms.SharedMethods - Website Title: What is Ethical Hacking | Types of Ethical Hacking | EC ...
+00:02:16.093 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.eccouncil.org 
+00:02:16.093 [Test worker] INFO  poms.SharedMethods - Short Description: Ethical Hacking. Ethical hacking is a process of detecting vulnerabilities in an application, system, or organization's infrastructure that an attacker can use to exploit an individual or organization. They use this process to prevent cyberattacks and security breaches by lawfully hacking into the systems and looking for weak points.
+00:02:16.093 [Test worker] INFO  poms.SharedMethods - Website Title: Ethical Hacking Tutorial
+00:02:16.093 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.tutorialspoint.com 
+00:02:16.093 [Test worker] INFO  poms.SharedMethods - Short Description: The first known event of hacking had taken place in 1960 at MIT and at the same time, the term "Hacker" was originated. In this tutorial, we will take you through the various concepts of Ethical Hacking and explain how you can use them in a real-time environment. Audience
+00:02:16.093 [Test worker] INFO  poms.SharedMethods - Website Title: What Is Ethical Hacking?
+00:02:16.094 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.codecademy.com 
+00:02:16.094 [Test worker] INFO  poms.SharedMethods - Short Description: Ethical hacking is also known as white hat hacking or penetration testing. It can be an exciting career because ethical hackers spend their workday learning how computer systems work, discovering their vulnerabilities, and breaking into them with no fear of being arrested.
+00:02:16.094 [Test worker] INFO  poms.SharedMethods - Website Title: What is Ethical Hacking and Type of Ethical Hackers [Updated]
+00:02:16.094 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.simplilearn.com 
+00:02:16.094 [Test worker] INFO  poms.SharedMethods - Short Description: Ethical Hacking is an authorized practice of bypassing system security to identify potential data breaches and threats in a network. The company that owns the system or network allows Cyber Security engineers to perform such activities in order to test the system's defenses.
+00:02:16.094 [Test worker] INFO  poms.SharedMethods - Website Title: What is ethical hacking? | NordVPN
+00:02:16.095 [Test worker] INFO  poms.SharedMethods - Website Url: https://nordvpn.com 
+00:02:16.095 [Test worker] INFO  poms.SharedMethods - Short Description: What is ethical hacking? Ethical hacking (also called white-hat hacking) is the use of hacking techniques for good, legal reasons, usually with the permission of the hacking target. For example, ethical hackers can try to gain unauthorized access to an organization's systems in order to expose and report vulnerabilities.
+00:02:16.095 [Test worker] INFO  poms.SharedMethods - Website Title: How to Become an Ethical Hacker | Guide for 2022
+00:02:16.095 [Test worker] INFO  poms.SharedMethods - Website Url: https://cybersecurityguide.org 
+00:02:16.095 [Test worker] INFO  poms.SharedMethods - Short Description: An ethical hacker's primary purpose is to view security from the adversary's perspective in an effort to find vulnerabilities that could be exploited by bad actors. This provides defensive teams the opportunity to mitigate by devising a patch before a real attack can occur.
+00:02:16.095 [Test worker] INFO  poms.SharedMethods - Website Title: What is Ethical Hacking? - Types, Meaning of Ethical Hacking
+00:02:16.095 [Test worker] INFO  poms.SharedMethods - Website Url: https://intellipaat.com 
+00:02:16.095 [Test worker] INFO  poms.SharedMethods - Short Description: Ethical Hacking is defined as any form of hacking that is authorized by the owner of the target system. It can also refer to the process of taking active security measures to defend systems from hackers with malicious intentions.
+00:02:16.096 [Test worker] INFO  poms.SharedMethods - Website Title: What is Ethical Hacking? | Ethical Hacking Fundamentals ...
+00:02:16.096 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.edureka.co 
+00:02:16.096 [Test worker] INFO  poms.SharedMethods - Short Description: What is Ethical Hacking? Hacking is the process of finding vulnerabilities in a system and using these found vulnerabilities to gain unauthorized access into the system to perform malicious activities ranging from deleting system files to stealing sensitive information.
+00:02:16.096 [Test worker] INFO  poms.SharedMethods - Website Title: What Is Ethical Hacking and Why Is It Important? - ethical.net
+00:02:16.096 [Test worker] INFO  poms.SharedMethods - Website Url: https://ethical.net 
+00:02:16.096 [Test worker] INFO  poms.SharedMethods - Short Description: Put simply, ethical hacking (or penetration testing) is the process of exploiting an IT system - with the owner's permission - to determine any vulnerabilities or weaknesses. The results are then used to tighten online security for both the end user and the system owner.
+00:02:16.096 [Test worker] INFO  poms.SharedMethods - Website Title: Free Ethical Hacking Tutorials for Beginners [Learn How to ...
+00:02:16.096 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.guru99.com 
+00:02:16.096 [Test worker] INFO  poms.SharedMethods - Short Description: Ethical Hacking is a method of identifying weaknesses in computer systems and computer networks to develop countermeasures that protect the weaknesses.
+00:02:16.097 [Test worker] INFO  poms.SharedMethods - ----------------------- Results not containing: ethical hacking -----------------------
+00:02:16.097 [Test worker] INFO  poms.SharedMethods - Website Title: Python Online Course - Start Learning Today
+00:02:16.097 [Test worker] INFO  poms.SharedMethods - Website Url: udemy.com
+00:02:16.097 [Test worker] INFO  poms.SharedMethods - Short Description: Shop thousands of high-quality on-demand online courses. Start learning today.. Join learners like you already enrolled. Top-rated course. 30-day guarantee.
+00:02:19.701 [Test worker] INFO  helpers.ui.BasePageObject - Navigate to: https://duckduckgo.com
+00:02:20.555 [Test worker] INFO  poms.DuckDuckGoHomePage - Search by keyword: privacy
+00:02:20.555 [Test worker] INFO  helpers.ui.BasePageObject - Wait up to 5 second(s) for an element to be clickable
+00:02:22.172 [Test worker] INFO  poms.DuckDuckGoHomePage - Found 12 results
+00:02:22.623 [Test worker] INFO  poms.SharedMethods - ----------------------- Results containing: privacy -----------------------
+00:02:22.624 [Test worker] INFO  poms.SharedMethods - Website Title: DuckDuckGo: Privacy Protection - Privacy, simplified.
+00:02:22.624 [Test worker] INFO  poms.SharedMethods - Website Url: duckduckgo.com
+00:02:22.624 [Test worker] INFO  poms.SharedMethods - Short Description: Private search. Tracker blocking. Smarter encryption. All for free. Tired of being tracked online? We can help. Take control of your data online.
+00:02:22.624 [Test worker] INFO  poms.SharedMethods - Website Title: Privacy Definition & Meaning - Merriam-Webster
+00:02:22.624 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.merriam-webster.com 
+00:02:22.624 [Test worker] INFO  poms.SharedMethods - Short Description: privacy: [noun] the quality or state of being apart from company or observation : seclusion. freedom from unauthorized intrusion.
+00:02:22.624 [Test worker] INFO  poms.SharedMethods - Website Title: What Is Privacy? | Privacy International
+00:02:22.624 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.privacyinternational.org 
+00:02:22.624 [Test worker] INFO  poms.SharedMethods - Short Description: On 25 May 2021, a Grand Chamber judgment against the UK broke new ground in the regulation of bulk interception capabilities requiring enhanced safeguards to protect the rights to privacy and freedom of expression against abuse.
+00:02:22.625 [Test worker] INFO  poms.SharedMethods - Website Title: Privacy
+00:02:22.625 [Test worker] INFO  poms.SharedMethods - Website Url: https://support.privacy.com 
+00:02:22.625 [Test worker] INFO  poms.SharedMethods - Short Description: About Privacy. Never heard of Privacy? Check here! I'm New to Privacy. Need help setting up an account? Check here! I've Already Signed Up for Privacy
+00:02:22.625 [Test worker] INFO  poms.SharedMethods - Website Title: What is Privacy? - Markkula Center for Applied Ethics
+00:02:22.625 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.scu.edu 
+00:02:22.625 [Test worker] INFO  poms.SharedMethods - Short Description: It is this narrower meaning of privacy, which James H. Moor calls "informational privacy," 5 that concerns us here, because that is what is threatened by the information-processing capabilities of computers. Moor defines the right to informational privacy as "the right to control of access to personal information."
+00:02:22.625 [Test worker] INFO  poms.SharedMethods - Website Title: What is Privacy - International Association of Privacy ...
+00:02:22.625 [Test worker] INFO  poms.SharedMethods - Website Url: https://iapp.org 
+00:02:22.626 [Test worker] INFO  poms.SharedMethods - Short Description: What does privacy mean? Well, it depends on who you ask. Broadly speaking, privacy is the right to be let alone, or freedom from interference or intrusion. Information privacy is the right to have some control over how your personal information is collected and used. Ask most people these d...
+00:02:22.626 [Test worker] INFO  poms.SharedMethods - Website Title: Privacy - definition of privacy by The Free Dictionary
+00:02:22.626 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.thefreedictionary.com 
+00:02:22.626 [Test worker] INFO  poms.SharedMethods - Short Description: Define privacy. privacy synonyms, privacy pronunciation, privacy translation, English dictionary definition of privacy. n. 1. The quality or condition of being secluded from the presence or view of others: I need some privacy to change into my bathing suit. 2. The state of...
+00:02:22.626 [Test worker] INFO  poms.SharedMethods - Website Title: Privacy
+00:02:22.626 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.privacy.com.br
+00:02:22.626 [Test worker] INFO  poms.SharedMethods - Short Description: Inscreva-se para ganhar dinheiro interagindo com seus fãs! Compartilhe conteúdo exclusivo.
+00:02:22.627 [Test worker] INFO  poms.SharedMethods - Website Title: 10 Reasons Why Privacy Matters - TeachPrivacy
+00:02:22.627 [Test worker] INFO  poms.SharedMethods - Website Url: https://teachprivacy.com 
+00:02:22.627 [Test worker] INFO  poms.SharedMethods - Short Description: Of course, the desire for privacy can conflict with important values, so privacy may not always win out in the balance. Sometimes people's desires for privacy are just brushed aside because of a view that the harm in doing so is trivial. Even if this doesn't cause major injury, it demonstrates a lack of respect for that person.
+00:02:22.627 [Test worker] INFO  poms.SharedMethods - Website Title: Privacy and Information Technology (Stanford Encyclopedia ...
+00:02:22.627 [Test worker] INFO  poms.SharedMethods - Website Url: https://plato.stanford.edu 
+00:02:22.627 [Test worker] INFO  poms.SharedMethods - Short Description: 1. Conceptions of privacy and the value of privacy. Discussions about privacy are intertwined with the use of technology. The publication that began the debate about privacy in the Western world was occasioned by the introduction of the newspaper printing press and photography.
+00:02:22.627 [Test worker] INFO  poms.SharedMethods - Website Title: How do I create a new Privacy Card? - Privacy
+00:02:22.627 [Test worker] INFO  poms.SharedMethods - Website Url: https://support.privacy.com 
+00:02:22.627 [Test worker] INFO  poms.SharedMethods - Short Description: There are two ways to create a new card - from the desktop site and from the mobile app. Desktop site: click the "New Card" button on your homepage. Mobile app: click the red icon in the top right corner of the app.
+00:02:22.627 [Test worker] INFO  poms.SharedMethods - Website Title: Your Kid deserves Data Privacy - Privacy Parent Empowers
+00:02:22.628 [Test worker] INFO  poms.SharedMethods - Website Url: privacyparent.com
+00:02:22.628 [Test worker] INFO  poms.SharedMethods - Short Description: Privacy Parent - Be Aware. Be Informed. Be Empowered Learn hoe to Protect Your Kids Online. Don't let everything they do online become part of their permanent record. Protect kids!
+Service catalog: Free, No Ads or Tracking
+00:02:22.628 [Test worker] INFO  poms.SharedMethods - ----------------------- Results not containing: privacy -----------------------
+00:02:26.107 [Test worker] INFO  helpers.ui.BasePageObject - Navigate to: https://duckduckgo.com
+00:02:26.954 [Test worker] INFO  poms.DuckDuckGoHomePage - Search by keyword: hire me please
+00:02:26.954 [Test worker] INFO  helpers.ui.BasePageObject - Wait up to 5 second(s) for an element to be clickable
+00:02:28.134 [Test worker] INFO  poms.DuckDuckGoHomePage - Found 11 results
+00:02:28.509 [Test worker] INFO  poms.SharedMethods - ----------------------- Results containing: hire me please -----------------------
+00:02:28.509 [Test worker] INFO  poms.SharedMethods - Website Title: Looking Hire in Minutes. - Javascript Required
+00:02:28.509 [Test worker] INFO  poms.SharedMethods - Website Url: indeed.com
+00:02:28.509 [Test worker] INFO  poms.SharedMethods - Short Description: Looking Hire on #1 Job Site. Try the #1 Job Site Now!
+00:02:28.509 [Test worker] INFO  poms.SharedMethods - Website Title: NSS E10 Website - hiremeplease.us
+00:02:28.509 [Test worker] INFO  poms.SharedMethods - Website Url: https://hiremeplease.us
+00:02:28.509 [Test worker] INFO  poms.SharedMethods - Short Description: Search & View Resumes Free 2M Resumes are Added Every Month
+00:02:28.509 [Test worker] INFO  poms.SharedMethods - Website Title: Hire me....please?
+00:02:28.510 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.linkedin.com 
+00:02:28.510 [Test worker] INFO  poms.SharedMethods - Short Description: Post a Job in Minutes Reach 200M Job Seekers
+00:02:28.510 [Test worker] INFO  poms.SharedMethods - Website Title: Hire Me Please GIFs - Find & Share on GIPHY
+00:02:28.510 [Test worker] INFO  poms.SharedMethods - Website Url: https://giphy.com 
+00:02:28.510 [Test worker] INFO  poms.SharedMethods - Short Description: THANK YOU To Zoe, Greg, and Michael. Thank you for helping us establish a solid foundation in the world of Software Development. Through all the Git conflicts, pits of despair, endless questions, screen share sessions, pinterest projects, pies, laughs, and everything in between, we are forever grateful for your time and concerted efforts to pass on your knowledge.
+00:02:28.510 [Test worker] INFO  poms.SharedMethods - Website Title: Hire Me - Help is on the way.Hire Me
+00:02:28.510 [Test worker] INFO  poms.SharedMethods - Website Url: hireme.com
+00:02:28.510 [Test worker] INFO  poms.SharedMethods - Short Description: Whilst the picture is rather amusing, sadly the story behind it is not. We come across very talented people on a daily basis who get this feedback regularly "not enough experience" or on the ...
+00:02:28.510 [Test worker] INFO  poms.SharedMethods - Website Title: Hire Us.
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Website Url: hiremeplease.org
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Short Description: hire me please. 65581 GIFs. # money # job # pay day # employment # recruiter. # monica # forgive me # please forgive me. # the simpsons # bart simpson # season 9 # episode 24 # forgive me. # forgive me # mine film # please forgive me. # happy # loki # tom hiddleston # pleased # this pleases me.
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Website Title: Google Please Hire Me - Nick White (Official Audio) - YouTube
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.youtube.com 
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Short Description: optimistic and self-motivated. how to apply: 1. interested applicants may send your resume online at rickyisnani@yahoo.com then send confirmation message to 090680614459284468345. 3. walk-in applicant. please e-mail sarah @ schilders@ameriplan.com to further your career in having a great income and working from home.
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Website Title: Hire me. Please? - Comedian. Writer. Wedding Officiant.
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Website Url: https://maggietheshipley.com
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Short Description: HIRE US; Katya - Daniel: Film, Video, Graphic, Web, Sound
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Website Title: 2,203 Hire Me Quick Jobs (UPDATED April 4, 2022) - Indeed
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.indeed.com 
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Short Description: Preparing For Your Coding Interviews? Use These Resources-----(NEW) My Data Structures & Algorithms for Coding Interviews...
+00:02:28.511 [Test worker] INFO  poms.SharedMethods - Website Title: Hire me (please =) )
+00:02:28.512 [Test worker] INFO  poms.SharedMethods - Website Url: https://eddiehking.com
+00:02:28.512 [Test worker] INFO  poms.SharedMethods - Short Description: Welcome to my website. You can read news stories I wrote.Check out my new podcast "Re-Kindled with Jeff and Maggie" on Apple and Spotify (it's about reading!).Hire me to officiate your wedding! Or just send me a nice note saying hi. Latest blog: Maggie in Late Night Hand-me-down Cat Get new content delivered directly to…
+00:02:28.512 [Test worker] INFO  poms.SharedMethods - Website Title: Please someone just hire me : SuicideWatch - reddit
+00:02:28.512 [Test worker] INFO  poms.SharedMethods - Website Url: https://www.reddit.com 
+00:02:28.512 [Test worker] INFO  poms.SharedMethods - Short Description: Hire Me Quick jobs. Sort by: relevance - date. Page 1 of 2,203 jobs. Displayed here are Job Ads that match your query. Indeed may be compensated by these employers, helping keep Indeed free for jobseekers. Indeed ranks Job Ads based on a combination of employer bids and relevance, such as your search terms and other activity on Indeed.
+00:02:28.512 [Test worker] INFO  poms.SharedMethods - ----------------------- Results not containing: hire me please -----------------------
+]]></system-out>
+  <system-err><![CDATA[1649628130423	geckodriver	INFO	Listening on 127.0.0.1:56661
+1649628130634	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-extensions" "--ignore-certificate-errors" "--disable-infobars" "--disable-gpu" "--remote-debugging-port" "63604" "-no-remote" "-profile" "C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofilei8Z6uD"
+1649628130914	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofilei8Z6uD\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63604/devtools/browser/adc5b978-daec-4891-b25b-599408565f21
+1649628132828	Marionette	INFO	Listening on port 57491
+Apr 11, 2022 12:02:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://duckduckgo.com"
+1649628136104	Marionette	INFO	Stopped listening on port 57491
+1649628136987	geckodriver	INFO	Listening on 127.0.0.1:57738
+1649628137013	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-extensions" "--ignore-certificate-errors" "--disable-infobars" "--disable-gpu" "--remote-debugging-port" "50157" "-no-remote" "-profile" "C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofile7J16Cj"
+1649628137290	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofile7J16Cj\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50157/devtools/browser/1de32bc8-0481-4a12-a836-91d3a2e788ad
+1649628139218	Marionette	INFO	Listening on port 57563
+Apr 11, 2022 12:02:19 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://duckduckgo.com"
+1649628142631	Marionette	INFO	Stopped listening on port 57563
+1649628143388	geckodriver	INFO	Listening on 127.0.0.1:64008
+1649628143416	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-extensions" "--ignore-certificate-errors" "--disable-infobars" "--disable-gpu" "--remote-debugging-port" "59928" "-no-remote" "-profile" "C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofileanuqZn"
+1649628143691	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\bogdan\\AppData\\Local\\Temp\\rust_mozprofileanuqZn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59928/devtools/browser/9331133b-12d0-485a-9043-d5e448ca3b76
+1649628145739	Marionette	INFO	Listening on port 57688
+Apr 11, 2022 12:02:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://duckduckgo.com"
+1649628148515	Marionette	INFO	Stopped listening on port 57688
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+]]></system-err>
+</testsuite>

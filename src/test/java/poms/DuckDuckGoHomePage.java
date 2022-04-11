@@ -1,6 +1,5 @@
 package poms;
 
-import containers.TestSessionData;
 import helpers.ui.BasePageObject;
 import helpers.ui.annotations.FindByDataTestId;
 import org.apache.commons.collections4.map.HashedMap;
@@ -63,8 +62,6 @@ public class DuckDuckGoHomePage extends BasePageObject {
 
             resultsInfo.add(resultDetails);
         }
-        TestSessionData.searchResults.add(resultsInfo);
-        SharedMethods.logResults(resultsInfo);
         return resultsInfo;
     }
 
