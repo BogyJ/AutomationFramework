@@ -41,9 +41,9 @@ public class SharedMethods {
     }
 
     public static void logCommonResults() {
-        List<String> commonUrlsOfSameKeyword = new ArrayList<>();
+        List<Map<String, String>> commonResultsOfSameKeyword = new ArrayList<>();
         Set<String> uniqueUrls = new HashSet<>();
-        List<String> duplicateResults = new ArrayList<>();
+        List<Map<String, String>> duplicateResults = new ArrayList<>();
 
         Set<String> keywords = new HashSet<>();
         List<String> duplicateKeywords = new ArrayList<>();
@@ -59,20 +59,25 @@ public class SharedMethods {
         for (int j = 0; j < TestSessionData.searchResults.size(); j++) {
             for (int i = 0; i < TestSessionData.searchResults.get(j).size(); i++) {
                 if (duplicateKeywords.contains(TestSessionData.searchResults.get(j).get(i).get("keyword"))) {
-                    commonUrlsOfSameKeyword.add(TestSessionData.searchResults.get(j).get(i).get("url"));
+                    commonResultsOfSameKeyword.add(TestSessionData.searchResults.get(j).get(i));
                 }
             }
         }
 
-        for (String url : commonUrlsOfSameKeyword) {
-            if (!uniqueUrls.add(url)) {
-                duplicateResults.add(url);
+        for (Map<String, String> value : commonResultsOfSameKeyword) {
+            if (!uniqueUrls.add(value.get("url"))) {
+                duplicateResults.add(value);
             }
         }
 
-        if(duplicateResults.size() > 0) log.info("============================== Common results ==============================");
-        for (String sameResult : duplicateResults) {
-            log.info("Website URL: {}", sameResult);
+        if(duplicateResults.size() > 0) {
+            log.info("============================== Common results ==============================");
+            for (Map<String, String> value : duplicateResults) {
+                log.info("Keyword: {}", value.get("keyword"));
+                log.info("Website Title: {}", value.get("websiteTitle"));
+                log.info("Website Url: {}", value.get("url"));
+                log.info("Short Description: {}", value.getOrDefault("shortDescription", "No description available."));
+            }
         }
 
     }
